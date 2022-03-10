@@ -1,0 +1,6 @@
+*.jpg
+*.png
+test_inference.ipynb
+cloth-cp
+server_side/__pycache__
+server_side/cloth-cp

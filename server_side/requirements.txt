@@ -1,0 +1,5 @@
+Flask
+Flask_Cors
+jsonpickle
+numpy
+opencv-python-headless

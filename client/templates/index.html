@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Clothing Detection</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h2>Clothing Detection using Pytorch</h2>
+<p class="lead">by: <b>Freddy Millenia</b></p>
+
+<!-- Upload  -->
+<form id="file-upload-form" class="uploader">
+  <input id="file-upload" type="file" name="fileUpload" accept="image/*" />
+
+  <label for="file-upload" id="file-drag">
+    <img id="file-image" src="#" alt="Preview" class="hidden">
+    <div id="start">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      <div>Select a file or drag here</div>
+      <div id="notimage" class="hidden">Please select an image</div>
+      <span id="file-upload-btn" class="btn btn-primary">Select a file</span>
+    </div>
+    <div id="response" class="hidden">
+      <div id="messages"></div>
+      <progress class="progress" id="file-progress" value="0">
+        <span>0</span>%
+      </progress>
+    </div>
+  </label>
+</form>
+
+<!-- -------------------------------Result view------------------------------- -->
+<div class="result">
+  <h1>Image result</h1>
+  <img id="img-result" scr="#" alt="Result" class="hidden">
+</div>
+
+<!-- -------------------------------Table view------------------------------- -->
+  <h1>Response payload</h1>
+  <table class="rwd-table">
+    <tr>
+      <th>Attribute</th>
+      <th>Value</th>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Time</td>
+      <td data-th="Value" id="time-stm">-</td>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Message</td>
+      <td data-th="Value" id="message">-</td>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Image size</td>
+      <td data-th="Value" id="img-size">-</td>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Process time</td>
+      <td data-th="Value" id="pr-time">-</td>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Server ID</td>
+      <td data-th="Value" id="sv-id">-</td>
+    </tr>
+    <tr>
+      <td data-th="Attribute">Face coordinate</td>
+      <td data-th="Value" id="bbox">-</td>
+    </tr>
+  </table>
+
+
+<div style="margin:auto;padding-top:3em;"></div>
+
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
