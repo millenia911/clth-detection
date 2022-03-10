@@ -5,7 +5,7 @@ Detect items of person outfit using deep learning in Pytorch with Detectron2(cpu
 
 It was trained with clothing dataset from https://github.com/seralexger/clothing-detection-dataset
 
-Trained weights is available here [insert link later]
+Trained weights is available here https://drive.google.com/drive/folders/1EAqzV06-23-bjiUm15RTUPHkU8V2tQ24?usp=sharing
 
 | Warning: The model is not reliable yet (until updated), further improvement with the dataset and training setup is needed.|
 | --- |
@@ -42,7 +42,7 @@ $ docker stack rm <your-stack-name>
 --------------------------------------
 #### TODO in README
 - [x] Add dataset source
-- [ ] Add checkpoint weights link
+- [x] Add checkpoint weights link
 - [ ] How to install detectron2
 
 

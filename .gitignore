@@ -1,6 +1,8 @@
 *.jpg
 *.png
+*.jpeg
 test_inference.ipynb
 cloth-cp
 server_side/__pycache__
 server_side/cloth-cp
+cloth-cp-20220309T122819Z-001.zip
