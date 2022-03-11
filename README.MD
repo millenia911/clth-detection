@@ -40,9 +40,5 @@ $ docker stack rm <your-stack-name>
 ```
 
 --------------------------------------
-#### TODO in README
-- [x] Add dataset source
-- [x] Add checkpoint weights link
-- [ ] How to install detectron2
 
 
